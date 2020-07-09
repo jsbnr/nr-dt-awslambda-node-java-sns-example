@@ -1,0 +1,1 @@
+{"statusCode":200,"headers":{"X-Frame-Options":"SAMEORIGIN","Server":"thin","X-Content-Type-Options":"nosniff","X-Xss-Protection":"1; mode=block","Connection":"keep-alive","Content-Length":"63","Date":"Fri, 29 May 2020 16:31:37 GMT","Content-Type":"text/html;charset=utf-8","Via":"1.1 vegur"},"body":"This is the backend sending a response (with delay 0.4 seconds)"}

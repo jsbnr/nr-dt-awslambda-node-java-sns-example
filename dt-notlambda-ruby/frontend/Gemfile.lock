@@ -1,0 +1,43 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    backports (3.15.0)
+    daemons (1.3.1)
+    eventmachine (1.2.7)
+    multi_json (1.14.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    newrelic_rpm (6.8.0.360)
+    rack (2.1.2)
+    rack-protection (2.0.8.1)
+      rack
+    ruby2_keywords (0.0.2)
+    sinatra (2.0.8.1)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.8.1)
+      tilt (~> 2.0)
+    sinatra-contrib (2.0.8.1)
+      backports (>= 2.8.2)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.0.8.1)
+      sinatra (= 2.0.8.1)
+      tilt (~> 2.0)
+    thin (1.7.2)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (>= 1, < 3)
+    tilt (2.0.10)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  newrelic_rpm
+  sinatra
+  sinatra-contrib
+  thin
+
+BUNDLED WITH
+   1.17.2

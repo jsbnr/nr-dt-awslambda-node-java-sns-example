@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: An AWS Lambda application that calls the Lambda API.
+Resources:
+  function:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: s3://lambda-artifacts-545a0a501d1daa25/4f0682742e4b4bb32b8b8bbf348eeb4a
+      Handler: example.Handler
+      Runtime: java8
+      Description: Java function
+      MemorySize: 512
+      Timeout: 10
+      # Function's execution role
+      Policies:
+      - AWSLambdaBasicExecutionRole
+      - AWSLambdaReadOnlyAccess
+      - AWSXrayWriteOnlyAccess
+      - AWSLambdaVPCAccessExecutionRole
+      Tracing: Active
+      Environment:
+        Variables:
+          NEW_RELIC_ACCOUNT_ID: 2460987
+          NEW_RELIC_PRIMARY_APPLICATION_ID: 2460987
+          NEW_RELIC_TRUSTED_ACCOUNT_KEY: 2460987
+          NEW_RELIC_DEBUG: true
+
