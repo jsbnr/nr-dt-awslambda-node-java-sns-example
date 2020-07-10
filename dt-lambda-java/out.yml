@@ -20,8 +20,8 @@ Resources:
       Tracing: Active
       Environment:
         Variables:
-          NEW_RELIC_ACCOUNT_ID: 2460987
-          NEW_RELIC_PRIMARY_APPLICATION_ID: 2460987
-          NEW_RELIC_TRUSTED_ACCOUNT_KEY: 2460987
-          NEW_RELIC_DEBUG: true
+          NEW_RELIC_ACCOUNT_ID: XXXX
+          NEW_RELIC_PRIMARY_APPLICATION_ID: XXXX
+          NEW_RELIC_TRUSTED_ACCOUNT_KEY: XXXX
+          NEW_RELIC_DEBUG: false
 
